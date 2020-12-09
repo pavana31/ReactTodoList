@@ -1,11 +1,13 @@
 import React, { Component } from "react";
-import TodoList from "./TodoList";
+import TodoChanges from './TodoChanges';
+import NewTodo from "./NewTodo.js";
 
 class TodoList extends Component {
     constructor(props) {
         super(props);
-        this.state = { items:[] };
-        this.addItem = this.addItem.bind(this);
+        // this.state = { items:[] };
+        // this.addItem = this.addItem.bind(this);
+        this.state = { }
     }
     render() { 
         

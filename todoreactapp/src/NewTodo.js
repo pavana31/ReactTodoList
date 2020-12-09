@@ -1,11 +1,30 @@
 import React, { Component} from  "react";
 import  "./NewTodo.css";
+import uuid from "uuid/v4";
+
 
 class NewTodo extends Component {
     constructor(props) {
         super(props);
-        this.state = {  }
+        this.state = { task: ""  }
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+
+
     }
+    handleChange(event) {
+       this.setState({ [event.target.name]: event.target.value });
+    }
+
+    handleSubmit(event) {
+        event.preventDefault();
+        const newTodo ={...this.state, id: uuid(), completed: false};
+        this.props.createTodo(newTodo);
+        this.setState({task:""});
+
+    }
+
+
     render() { 
         return ( 
             <div>
@@ -19,6 +38,8 @@ class NewTodo extends Component {
                     type="text"
                     placeholder="enter task.."
                     name="task"
+                    value={this.state.task}
+                    onChange={this.handleChange}
                     >
 
                     </input>

@@ -7,7 +7,8 @@ import NewTodo from './NewTodo';
 
 ReactDOM.render(
   <React.StrictMode>
-    <NewTodo />
+    <TodoList />
+  
   </React.StrictMode>,
   document.getElementById('root')
 );
