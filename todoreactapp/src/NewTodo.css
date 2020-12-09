@@ -1,0 +1,51 @@
+#heading {
+  color: red;
+  background-color: white;
+  text-align: center;
+  font-weight: normal;
+  margin-top: -5%;
+  margin-left: -40%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+#NewTodo h1 span {
+  display: block;
+  font-size: 0.8rem;
+  margin-bottom: 0.7rem;
+  margin-left: 3px;
+  margin-top: 0.2rem;
+}
+#headingh4 {
+  font-family: Georgia;
+  margin-left: -5%;
+}
+body {
+  background-color: white;
+  position: relative;
+  align-items: center;
+  padding: 5%;
+  margin-left: 22%;
+}
+#form {
+  margin-left: 40;
+}
+#task {
+  padding: 20px 90px;
+  margin-left: 1%;
+}
+#submit-btn {
+  background-color: #45a049;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  display: inline;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 15px 30px;
+  font-size: 18px;
+}
+/* .inputClass {
+  text-align: left;
+} */
+.NewTodoForm button:hover {
+  background: #82aaff;
+}
