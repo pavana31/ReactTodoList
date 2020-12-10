@@ -7,6 +7,10 @@
   margin-left: -40%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
+h4 {
+  text-align: center;
+  margin-left: -40%;
+}
 #NewTodo h1 span {
   display: block;
   font-size: 0.8rem;
@@ -16,12 +20,12 @@
 }
 #headingh4 {
   font-family: Georgia;
-  margin-left: -5%;
+  margin-left: -20%;
 }
 body {
   background-color: white;
   position: relative;
-  align-items: center;
+  /* align-items: center; */
   padding: 5%;
   margin-left: 22%;
 }
@@ -30,7 +34,9 @@ body {
 }
 #task {
   padding: 20px 90px;
-  margin-left: 1%;
+
+  color: #45a049;
+  font-size: 1em;
 }
 #submit-btn {
   background-color: #45a049;
@@ -46,6 +52,6 @@ body {
 /* .inputClass {
   text-align: left;
 } */
-.NewTodoForm button:hover {
+.NewTodo button:hover {
   background: #82aaff;
 }

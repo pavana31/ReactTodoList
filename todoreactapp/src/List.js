@@ -6,13 +6,11 @@ class List extends Component {
         this.state = {  }
     }
     render() { 
-        return ( <div></div> );
+        return ( <div>
+            {/* <label>In your list</label> */}
+        </div> );
     }
 }
- 
-export default List;
-
-
 //  const List = props => (
 //   <ul>
 //     {
@@ -20,5 +18,9 @@ export default List;
 //     }
 //   </ul>
 // );
+export default List;
+
+
+ 
 
 
