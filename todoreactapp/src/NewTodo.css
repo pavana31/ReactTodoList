@@ -1,15 +1,19 @@
+/* Todo list pavana heading */
 #heading {
-  color: red;
+  color: rgb(255, 0, 0);
   background-color: white;
-  text-align: center;
+  /* text-align: center; */
   font-weight: normal;
-  margin-top: -5%;
-  margin-left: -40%;
+  margin-top: 10px;
+  margin-left: 300px;
+  margin-right: 5px;
+
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
+
 h4 {
-  text-align: center;
-  margin-left: -40%;
+  /* text-align: center; */
+  margin-left: 32%;
 }
 #NewTodo h1 span {
   display: block;
@@ -18,10 +22,7 @@ h4 {
   margin-left: 3px;
   margin-top: 0.2rem;
 }
-#headingh4 {
-  font-family: Georgia;
-  margin-left: -20%;
-}
+
 body {
   background-color: white;
   position: relative;
@@ -29,14 +30,21 @@ body {
   padding: 5%;
   margin-left: 22%;
 }
-#form {
-  margin-left: 40;
+label {
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
 }
-#task {
-  padding: 20px 90px;
+
+input {
+  padding: 15px 10px;
+  width: 50%;
 
   color: #45a049;
   font-size: 1em;
+  flex-grow: 1;
+}
+#count {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 #submit-btn {
   background-color: #45a049;
@@ -49,9 +57,13 @@ body {
   padding: 15px 30px;
   font-size: 18px;
 }
-/* .inputClass {
-  text-align: left;
-} */
+
+.inputClass {
+  align-items: center;
+}
 .NewTodo button:hover {
   background: #82aaff;
+}
+.container {
+  justify-items: center;
 }

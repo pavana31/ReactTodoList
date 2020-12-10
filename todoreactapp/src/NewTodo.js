@@ -1,5 +1,6 @@
 import React, { Component} from  "react";
 import  "./NewTodo.css";
+import { Button } from 'reactstrap';
 // import List from './List';
 // import uuid from "uuid/v4";
 
@@ -62,32 +63,19 @@ class NewTodo extends Component {
     render() { 
         return ( 
             <div>
-               <h1 id="heading">To do List 
-        <span> By PAVANA </span></h1> 
-                <h4>Todo list for {this.state.todotasks.length} todotasks</h4>
+               <h1 id="heading">To do List By
+        <span class="text-success" >  PAVANA </span></h1> 
+                <h4 class="text-primary" >Todo list for {this.state.todotasks.length} Todo tasks</h4>
                  {/* ul fo remove */}
-                 <ol>
-                    {
-                        this.state.todotasks.map((item, i) => (
-                            <li key={i}>
-                                {item}
-                                {/* {console.log(item)} */}
-                                {' '}
-                                <button
-                                    type="button"
-                                    onClick={() => this.remove(i)}>x</button>
-                            </li>
-                        ))
-                    }
-                </ol>
-                
+                 
+                <div class="container">
                 {/* <form id="form" className ="forminput" onSubmit={this.onSubmit} > */}
-                  <label id="headingh4">Enter your input :</label>
+                  <label id="headingh4" class="container" >Prioritize your tasks here</label>
                     <input 
                     id="task"
                     className="inputClass"
                     type="text"
-                    placeholder="What needs to do ?"
+                    placeholder="Have Tasks in mind? Enter here !"
                     name="task"
                     // value={this.state.items}
                     value={this.state.items}
@@ -95,11 +83,30 @@ class NewTodo extends Component {
                     >
 
                     </input>
-                    <button id="submit-btn" onClick={this.add} aria-pressed="true"  > Add to List</button>
+                    <button id="submit-btn" class="btn btn-info btn-lg"  onClick={this.add} aria-pressed="true"  >
+                         Add to List </button>
+                         {/* ordered list */}
+                         <div class="container" >
+                         <ol>
+                    {
+                        this.state.todotasks.map((item, i) => (
+                            <li key={i}>
+                                {item}
+                                {/* {console.log(item)} */}
+                                {' '}
+                                <button
+                                    type="button" class="btn btn-danger"
+                                    onClick={() => this.remove(i)}>Cancel  X<span class="glyphicon glyphicon-trash"></span></button>
+                                    
+                            </li>
+                        ))
+                    }
+                </ol>
+                </div>
                 
                     {/* </form>   */}
                     {/* <List todotasks = {this.state.todotasks}/>  */}
-                
+                </div>
             </div>
          );
     }
