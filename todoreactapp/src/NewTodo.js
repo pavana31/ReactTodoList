@@ -63,47 +63,55 @@ class NewTodo extends Component {
     render() { 
         return ( 
             <div>
+                {/* heading title */}
                <h1 id="heading">To do List By
         <span class="text-success" >  PAVANA </span></h1> 
                 <h4 class="text-primary" >Todo list for {this.state.todotasks.length} Todo tasks</h4>
-                 {/* ul fo remove */}
+                 {/*counts the tasks */}
                  
                 <div class="container">
                 {/* <form id="form" className ="forminput" onSubmit={this.onSubmit} > */}
-                  <label id="headingh4" class="container" >Prioritize your tasks here</label>
+                  <label id="headingh4" class="container1" >Prioritize your tasks here</label>
                     <input 
                     id="task"
                     className="inputClass"
                     type="text"
                     placeholder="Have Tasks in mind? Enter here !"
                     name="task"
-                    // value={this.state.items}
                     value={this.state.items}
                     onChange={this.update}
                     >
 
                     </input>
+
+
                     <button id="submit-btn" class="btn btn-info btn-lg"  onClick={this.add} aria-pressed="true"  >
                          Add to List </button>
+
+
                          {/* ordered list */}
-                         <div class="container" >
+                         <div >
                          <ol>
                     {
                         this.state.todotasks.map((item, i) => (
+                               
                             <li key={i}>
                                 {item}
                                 {/* {console.log(item)} */}
                                 {' '}
-                                <button
-                                    type="button" class="btn btn-danger"
+                               
+                                <button id="cancelbutton"
+                                    type="button" class="btn btn-danger"  
                                     onClick={() => this.remove(i)}>Cancel  X<span class="glyphicon glyphicon-trash"></span></button>
                                     
                             </li>
                         ))
                     }
                 </ol>
-                </div>
                 
+                 
+                </div>
+               
                     {/* </form>   */}
                     {/* <List todotasks = {this.state.todotasks}/>  */}
                 </div>
