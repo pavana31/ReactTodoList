@@ -66,7 +66,7 @@ class NewTodo extends Component {
                 {/* heading title */}
                <h1 id="heading">To do List By
         <span class="text-success" >  PAVANA </span></h1> 
-                <h4 class="text-primary" >Todo list for {this.state.todotasks.length} Todo tasks</h4>
+                <h4 class="text-primary" >You have {this.state.todotasks.length} Todo tasks</h4>
                  {/*counts the tasks */}
                  
                 <div class="container">
@@ -83,15 +83,15 @@ class NewTodo extends Component {
                     >
 
                     </input>
-
+                    
 
                     <button id="submit-btn" class="btn btn-info btn-lg"  onClick={this.add} aria-pressed="true"  >
                          Add to List </button>
 
 
                          {/* ordered list */}
-                         <div >
-                         <ol>
+                       
+                         <ol id="cancelbutton">
                     {
                         this.state.todotasks.map((item, i) => (
                                
@@ -110,7 +110,7 @@ class NewTodo extends Component {
                 </ol>
                 
                  
-                </div>
+                
                
                     {/* </form>   */}
                     {/* <List todotasks = {this.state.todotasks}/>  */}

@@ -56,6 +56,7 @@ input {
   cursor: pointer;
   padding: 15px 30px;
   font-size: 1.2em;
+  justify-content: space-between;
 }
 /* button {
   cursor: pointer;
@@ -64,6 +65,8 @@ input {
 .inputClass {
   align-items: center;
   margin-left: 18%;
+  padding: 15px 8px;
+  /* width: 50%; */
 }
 .NewTodo button:hover {
   background: #82aaff;
@@ -83,10 +86,21 @@ li {
   font-size: 1em;
 }
 #cancelbutton {
-  margin-left: 30%;
-  flex-shrink: 0;
-  padding-left: 0.7em;
+  /* margin-left: 30%; */
+
+  padding-left: 20%;
   justify-content: space-between;
+  align-items: center;
+  /* background: hsla(0, 0%, 100%, 0.1); */
+  /* margin: 0 -3rem 5px; */
+  padding: 1.1rem 2rem;
+  /* display: flex; */
+
+  /* margin: 0 -3rem 5px;
+  padding: 1.1rem 4rem;
+  justify-content: space-between;
+  align-items: center;
+  background: hsla(0, 0%, 100%, 0.1); */
 }
 .container {
   margin: 4rem auto;
