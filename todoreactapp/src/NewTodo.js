@@ -85,7 +85,7 @@ class NewTodo extends Component {
                     </input>
                     
 
-                    <button id="submit-btn" class="paper-btn btn-primary-outline"  onClick={this.add} aria-pressed="true"  >
+                    <button id="submit-btn" class="btn btn-primary"  onClick={this.add} aria-pressed="true"  >
                          Add to List </button>
 
 
