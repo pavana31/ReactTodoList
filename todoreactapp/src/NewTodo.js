@@ -102,7 +102,7 @@ class NewTodo extends Component {
                                
                                 <button id="cancelbutton"
                                     type="button" class="btn btn-danger"  
-                                    onClick={() => this.remove(i)}>Cancel  X<span class="glyphicon glyphicon-trash"></span></button>
+                                    onClick={() => this.remove(i)}>Cancel<span class="glyphicon glyphicon-trash"></span></button>
                                     
                             </li>
                         ))
