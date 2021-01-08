@@ -64,7 +64,7 @@ class NewTodo extends Component {
         return ( 
             <div>
                 {/* heading title */}
-               <h1 id="heading">To do List By
+               <h1  id="heading">To do List By
         <span class="text-success" >  PAVANA </span></h1> 
                 <h4 class="text-primary" >You have {this.state.todotasks.length} Todo tasks</h4>
                  {/*counts the tasks */}
@@ -85,7 +85,7 @@ class NewTodo extends Component {
                     </input>
                     
 
-                    <button id="submit-btn" class="btn btn-success"  onClick={this.add} aria-pressed="true"  >
+                    <button id="submit-btn" class="paper-btn btn-primary-outline"  onClick={this.add} aria-pressed="true"  >
                          Add to List </button>
 
 

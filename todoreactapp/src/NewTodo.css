@@ -7,8 +7,8 @@
   padding: 10px 6px;
   margin-top: 10px;
   /* margin-left: 400px;
-  margin-right: 500px; */
-  border-bottom: 2px solid rgba(5, 16, 175, 0.3);
+  margin-right: 500px;
+ border-bottom: 2px solid rgba(5, 16, 175, 0.3); */
 }
 
 h4 {
@@ -50,7 +50,7 @@ input {
 #submit-btn {
   /* border-radius: 5px; */
 
-  color: white;
+  color: rgb(20, 18, 18);
   text-align: center;
   /* display: inline-flex; */
   margin: 10px 50px;
@@ -99,9 +99,9 @@ li {
 }
 .container {
   margin: 4rem auto;
-  padding: 2rem 3rem 10rem;
+  padding: 0.11rem 1rem 5rem 1rem;
   max-width: 600px;
-  background: #292d3e;
+  background: #23273b;
   color: #fff;
   box-shadow: -10px -10px 0px 0px rgba(67, 143, 230, 0.1);
   overflow: hidden;
