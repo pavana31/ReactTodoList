@@ -3,6 +3,7 @@ import  "./NewTodo.css";
 
 
 
+
 class NewTodo extends Component {
     constructor(props) {
         super(props);
@@ -89,21 +90,22 @@ class NewTodo extends Component {
                     
                     <button id="submit-btn" class="btn btn-success "  onClick={this.add} aria-pressed="true"  >
                          Add to List </button>
+                         <br/>
 
-
+                    
                          {/* ordered list */}
                        
-                         <ol id="cancelbutton">
+                         <ol class=" list-group-item-light" id="cancelbutton">
                     {
                         this.state.todotasks.map((item, i) => (
                                
-                            <li key={i}>
+                            <li  key={i} >
                                 {item}
                                 {/* {console.log(item)} */}
                                 {' '}
                                
                                 <button id="cancelbutton" 
-                                    type="button" class="btn btn-danger "  
+                                    type="button" class="btn btn-danger float right "  
                                     onClick={() => this.remove(i)}>Delete</button>
                                     
                             </li>
@@ -111,7 +113,7 @@ class NewTodo extends Component {
                     }
                 </ol>
                 
-                 
+               
                 
                
                     {/* </form>   */}
