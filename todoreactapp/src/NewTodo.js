@@ -64,17 +64,17 @@ class NewTodo extends Component {
         return ( 
             <div>
                 {/* heading title */}
-               <h1  id="heading">To do List By
+               <h1 class="text-center"  >To do List By
         <span class="text-success" >  PAVANA </span></h1> 
-                <h4 class="text-primary" >You have {this.state.todotasks.length} Todo tasks</h4>
+                <h4 class="text-primary text-center" >You have {this.state.todotasks.length} Todo tasks</h4>
                  {/*counts the tasks */}
                  
                 <div class="container">
                 {/* <form id="form" className ="forminput" onSubmit={this.onSubmit} > */}
-                  <label id="headingh4" class="container1" >Prioritize your tasks here</label>
+                  <label  id="headingh4" class="container1 text-center mt-6 " >Prioritize your tasks here</label>
                     <input 
                     id="task"
-                    className="inputClass"
+                    className="inputClass "
                     type="text"
                     placeholder="Have Tasks in mind? Enter here !"
                     name="task"
@@ -83,9 +83,13 @@ class NewTodo extends Component {
                     >
 
                     </input>
+                    &nbsp;&nbsp; &nbsp; &nbsp;  &nbsp;
+                     &nbsp;
+                    &nbsp;
+                    &nbsp;
+                     
                     
-
-                    <button id="submit-btn" class="btn btn-primary"  onClick={this.add} aria-pressed="true"  >
+                    <button id="submit-btn" class="btn btn-success "  onClick={this.add} aria-pressed="true"  >
                          Add to List </button>
 
 
@@ -100,9 +104,9 @@ class NewTodo extends Component {
                                 {/* {console.log(item)} */}
                                 {' '}
                                
-                                <button id="cancelbutton"
-                                    type="button" class="btn btn-danger"  
-                                    onClick={() => this.remove(i)}>Cancel<span class="glyphicon glyphicon-trash"></span></button>
+                                <button id="cancelbutton" 
+                                    type="button" class="btn btn-danger "  
+                                    onClick={() => this.remove(i)}>Delete</button>
                                     
                             </li>
                         ))
