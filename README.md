@@ -1,5 +1,5 @@
 # ReactTodoList
-todo-list-react.pavana31.vercel.app
+https://todo-list-react.pavana31.vercel.app/
 
 
 # using functional components 
